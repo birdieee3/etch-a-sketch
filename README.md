@@ -1,5 +1,9 @@
 # etch-a-sketh exercise for the Odin Project
 
+**[Open site](https://birdieee3.github.io/etch-a-sketch/)**
+
+**Here are the guidelines I used:**
+
 ## 1
 
 create a 16x16 grid of square divs inside the #container div (using js)
@@ -25,7 +29,7 @@ max for this input should be 100
 potential research tips: \<button> tags, prompts
 
 
-## extra credit
+## extra credit (not currently implemented)
 
 randomize the squares' rgb values with each interaction rather than same color
 
