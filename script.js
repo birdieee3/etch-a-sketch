@@ -4,6 +4,7 @@ const container = document.querySelector("#container");
 const grid = document.querySelector("#grid");
 const MAX_GRID_SIDE_LEN = 100;
 let gridSideLen = 16;
+const sizeStatement = document.querySelector("p");
 
 const resizeBtn = document.querySelector("button");
 let squareArray = document.querySelectorAll(".square")
@@ -29,6 +30,7 @@ function generateSquares(gridSideLen) {
         grid.appendChild(column);
     }
     document.documentElement.style.setProperty('--gridSideLen', gridSideLen);
+    sizeStatement.textContent = gridSideLen + "x" + gridSideLen;
 }
 
 function clearSquares() {

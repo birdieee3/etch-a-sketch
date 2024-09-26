@@ -38,8 +38,8 @@ body {
 #grid {
     display: flex;
     /* flex-wrap: wrap; */
-    height: 500px;
-    width: 500px;
+    height: 550px;
+    width: 550px;
 }
 
 
@@ -55,8 +55,8 @@ body {
     flex: 1 0 auto;
     background-color: white;
     /* padding: 5px; */
-    width: calc(500px/ var(--gridSideLen));
-    height: calc(500px/ var(--gridSideLen));
+    width: calc(550px/ var(--gridSideLen));
+    height: calc(550px/ var(--gridSideLen));
     margin: 0px;
     display: block;
 
