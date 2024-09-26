@@ -1,0 +1,72 @@
+html {
+    height: 100%;
+}
+body {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    /* min-height: 100vh; */
+    height: 100%;
+    
+    
+}
+
+/* main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 10%; 
+}*/
+
+#container {
+    /* padding: 16px 10%; */
+    /* height: 100%; */
+    padding: 0;
+    margin: 0;
+    margin-top: 100px;
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+}
+
+#grid {
+    display: flex;
+    /* flex-wrap: wrap; */
+    height: 500px;
+    width: 500px;
+}
+
+
+
+/* testing stuff out */
+.col {
+    width: auto;
+    /* border: 1px solid blue; */
+}
+.square {
+    box-sizing: border-box; /* Include border in the size calculation */
+
+    flex: 1 0 auto;
+    background-color: white;
+    /* padding: 5px; */
+    width: calc(500px/ var(--gridSideLen));
+    height: calc(500px/ var(--gridSideLen));
+    margin: 0px;
+    display: block;
+
+    border: 1px solid black;
+
+    /* text test */
+    /* line-height: 20px; */
+    color: black;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
