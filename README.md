@@ -1,3 +1,5 @@
+# etch-a-sketh exercise for the Odin Project
+
 ## 1
 
 create a 16x16 grid of square divs inside the #container div (using js)
