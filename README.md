@@ -12,7 +12,7 @@ make them appear as a grid using flexbox in .css file
 
 set up a hover effect so that the divs change color when mouse passes over them
 => can set up event listeners
-=> on event, add class to the div (and probably not toggle buyt keep the class)
+=> on event, add class to the div (and probably not toggle but keep the class)
 
 ## 3
 
