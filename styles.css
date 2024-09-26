@@ -60,7 +60,7 @@ body {
     margin: 0px;
     display: block;
 
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
     /* text test */
     /* line-height: 20px; */
@@ -68,4 +68,8 @@ body {
     font-weight: bold;
     font-size: 2em;
     text-align: center;
+}
+
+.inked {
+    background-color: black;
 }

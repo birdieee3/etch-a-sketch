@@ -4,7 +4,7 @@ const container = document.querySelector("#container");
 const grid = document.querySelector("#grid");
 const MAX_GRID_SIDE_LEN = 100;
 let gridSideLen = 16;
-document.documentElement.style.setProperty('--gridSideLen', gridSideLen);
+
 const resizeBtn = document.querySelector("button");
 let squareArray = document.querySelectorAll(".square")
 
@@ -22,13 +22,36 @@ function generateSquares(gridSideLen) {
             square.classList.add("square");
             column.appendChild(square);
             square.addEventListener("mouseover", function() {
-                console.log(this);
+                // console.log(this); // debug line
+                this.classList.add("inked");
             })
         }
         grid.appendChild(column);
     }
+    document.documentElement.style.setProperty('--gridSideLen', gridSideLen);
 }
 
+function clearSquares() {
+    grid.innerHTML = "";
+}
+
+function validLen(inputLen) {
+    if ((Number.isInteger(inputLen)) && (inputLen > 0) && (inputLen <= MAX_GRID_SIDE_LEN)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+resizeBtn.addEventListener("click", function() {
+
+    let inputLen = parseInt(prompt("Squares per side:"));
+    if (validLen(inputLen)) {
+        gridSideLen = inputLen;
+        clearSquares();
+        generateSquares(gridSideLen);
+    } 
+})
 
 
 // on load, generate the grid
